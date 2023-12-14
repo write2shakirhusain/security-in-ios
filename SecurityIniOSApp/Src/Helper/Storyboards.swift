@@ -22,6 +22,11 @@ class Storyboards{
         return getMainStoryboards().instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
 
     }
+    class func getLoginByAlertScreen()->LoginByAlertViewController{
+        
+        return getMainStoryboards().instantiateViewController(withIdentifier: "LoginByAlertViewController") as! LoginByAlertViewController
+
+    }
     class func getFaceIDScreen()->LoginViewController{
         
         return getMainStoryboards().instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController

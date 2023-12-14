@@ -90,35 +90,42 @@ extension HomeViewController : UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let selectedItem = securityItems[indexPath.row]
-        var nextViewCon:UIViewController?
        
         
         switch selectedItem.type {
         
             
             case .PasswordInTextField:
-                nextViewCon = Storyboards.getLoginScreen()
-            nextViewCon?.title = "Password Text Field"
-            case .PasswordInAlert:
-                nextViewCon = Storyboards.getLoginScreen()
+            var nextViewCon = Storyboards.getLoginScreen() 
+                nextViewCon.title = "Login using by Text Field"
+                gotoSelectedScreen(selectedScreen: nextViewCon)
+
+        case .PasswordInAlert:
+                var nextViewCon = Storyboards.getLoginByAlertScreen()
+                nextViewCon.title = "Login using by Alert"
+                gotoSelectedScreen(selectedScreen: nextViewCon)
 
             case .TouchId:
-                nextViewCon = Storyboards.getTouchIDScreen()
+                var nextViewCon = Storyboards.getTouchIDScreen()
 
             case .FaceId:
-                nextViewCon = Storyboards.getFaceIDScreen()
+            var nextViewCon = Storyboards.getFaceIDScreen()
 
             case .TextFile:
-                nextViewCon = Storyboards.getTextFileScreen()
+                var nextViewCon = Storyboards.getTextFileScreen()
 
             case .DataFile:
-                nextViewCon = Storyboards.getDataFileScreen()
+                var nextViewCon = Storyboards.getDataFileScreen()
 
             case .KeyChain:
-                nextViewCon = Storyboards.getKeychainScreen()
+                var nextViewCon = Storyboards.getKeychainScreen()
         }
         
-        navigationController?.pushViewController(nextViewCon!, animated: true)
+
+    }
+    
+    func gotoSelectedScreen(selectedScreen:UIViewController) {
+        navigationController?.pushViewController(selectedScreen, animated: true)
 
     }
 }

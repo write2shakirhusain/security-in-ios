@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		804D273F2B2B35EA00CAE145 /* LoginByAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D273E2B2B35EA00CAE145 /* LoginByAlertViewController.swift */; };
 		80E77B202B1DA57700BB9ACE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E77B1F2B1DA57700BB9ACE /* AppDelegate.swift */; };
 		80E77B222B1DA57700BB9ACE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E77B212B1DA57700BB9ACE /* SceneDelegate.swift */; };
 		80E77B272B1DA57700BB9ACE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80E77B252B1DA57700BB9ACE /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		804D273E2B2B35EA00CAE145 /* LoginByAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginByAlertViewController.swift; sourceTree = "<group>"; };
 		80E77B1C2B1DA57700BB9ACE /* SecurityIniOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecurityIniOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E77B1F2B1DA57700BB9ACE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80E77B212B1DA57700BB9ACE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				80E77B402B1DB5A100BB9ACE /* LoginViewController.swift */,
+				804D273E2B2B35EA00CAE145 /* LoginByAlertViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				80E77B442B1DB6B200BB9ACE /* Storyboards.swift in Sources */,
 				80E77B202B1DA57700BB9ACE /* AppDelegate.swift in Sources */,
 				80E77B222B1DA57700BB9ACE /* SceneDelegate.swift in Sources */,
+				804D273F2B2B35EA00CAE145 /* LoginByAlertViewController.swift in Sources */,
 				80E77B3D2B1DAFCC00BB9ACE /* HomeViewController.swift in Sources */,
 				80E77B412B1DB5A100BB9ACE /* LoginViewController.swift in Sources */,
 				80E77B3F2B1DAFF600BB9ACE /* HomeTblCell.swift in Sources */,
