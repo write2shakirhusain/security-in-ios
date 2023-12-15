@@ -23,7 +23,7 @@ class LoginViewController: UIViewController {
     }
     
     func uiConfigure() {
-        
+        title = "Login using by Text Field"
         txtFieldUserId.placeholder = "Enter User Id"
         txtFieldUserId.isSecureTextEntry = false
         

@@ -96,29 +96,33 @@ extension HomeViewController : UITableViewDelegate{
         
             
             case .PasswordInTextField:
-            var nextViewCon = Storyboards.getLoginScreen() 
-                nextViewCon.title = "Login using by Text Field"
+            let nextViewCon = Storyboards.getLoginScreen() 
                 gotoSelectedScreen(selectedScreen: nextViewCon)
 
         case .PasswordInAlert:
-                var nextViewCon = Storyboards.getLoginByAlertScreen()
-                nextViewCon.title = "Login using by Alert"
+            let nextViewCon = Storyboards.getLoginByAlertScreen()
                 gotoSelectedScreen(selectedScreen: nextViewCon)
 
             case .TouchId:
-                var nextViewCon = Storyboards.getTouchIDScreen()
+                let nextViewCon = Storyboards.getTouchIDScreen()
+                gotoSelectedScreen(selectedScreen: nextViewCon)
 
             case .FaceId:
-            var nextViewCon = Storyboards.getFaceIDScreen()
+            let nextViewCon = Storyboards.getFaceIDScreen()
+                gotoSelectedScreen(selectedScreen: nextViewCon)
 
             case .TextFile:
-                var nextViewCon = Storyboards.getTextFileScreen()
+                let nextViewCon = Storyboards.getTextFileScreen()
+                gotoSelectedScreen(selectedScreen: nextViewCon)
 
             case .DataFile:
-                var nextViewCon = Storyboards.getDataFileScreen()
+                let nextViewCon = Storyboards.getDataFileScreen()
+                gotoSelectedScreen(selectedScreen: nextViewCon)
 
             case .KeyChain:
-                var nextViewCon = Storyboards.getKeychainScreen()
+                let nextViewCon = Storyboards.getKeychainScreen()
+                gotoSelectedScreen(selectedScreen: nextViewCon)
+
         }
         
 

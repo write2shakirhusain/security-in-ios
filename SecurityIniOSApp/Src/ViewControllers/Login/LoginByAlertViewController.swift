@@ -19,7 +19,7 @@ class LoginByAlertViewController: UIViewController {
     }
     
     func uiConfigure() {
-    
+        title = "Login using by Alert"
         setupLoginAlert()
     }
    
@@ -35,6 +35,7 @@ class LoginByAlertViewController: UIViewController {
             textFieldUserId.placeholder = "Enter User Id"
 
         }
+        
         loginAlertViewCon?.addTextField{(textFieldPassword) in
             textFieldPassword.isSecureTextEntry = true
             textFieldPassword.placeholder = "Enter Password"

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		804D273F2B2B35EA00CAE145 /* LoginByAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D273E2B2B35EA00CAE145 /* LoginByAlertViewController.swift */; };
+		804D27412B2C0B0400CAE145 /* TouchIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D27402B2C0B0400CAE145 /* TouchIdViewController.swift */; };
+		804D27432B2C0F1500CAE145 /* FaceIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D27422B2C0F1500CAE145 /* FaceIdViewController.swift */; };
+		804D27452B2C127C00CAE145 /* TextFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D27442B2C127C00CAE145 /* TextFileViewController.swift */; };
+		804D27482B2C868800CAE145 /* DataFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D27472B2C868800CAE145 /* DataFileViewController.swift */; };
+		804D274A2B2C8AD800CAE145 /* KeychainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D27492B2C8AD800CAE145 /* KeychainViewController.swift */; };
 		80E77B202B1DA57700BB9ACE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E77B1F2B1DA57700BB9ACE /* AppDelegate.swift */; };
 		80E77B222B1DA57700BB9ACE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E77B212B1DA57700BB9ACE /* SceneDelegate.swift */; };
 		80E77B272B1DA57700BB9ACE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80E77B252B1DA57700BB9ACE /* Main.storyboard */; };
@@ -21,6 +26,12 @@
 
 /* Begin PBXFileReference section */
 		804D273E2B2B35EA00CAE145 /* LoginByAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginByAlertViewController.swift; sourceTree = "<group>"; };
+		804D27402B2C0B0400CAE145 /* TouchIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIdViewController.swift; sourceTree = "<group>"; };
+		804D27422B2C0F1500CAE145 /* FaceIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIdViewController.swift; sourceTree = "<group>"; };
+		804D27442B2C127C00CAE145 /* TextFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFileViewController.swift; sourceTree = "<group>"; };
+		804D27462B2C12A700CAE145 /* SecurityIniOSApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SecurityIniOSApp.entitlements; sourceTree = "<group>"; };
+		804D27472B2C868800CAE145 /* DataFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFileViewController.swift; sourceTree = "<group>"; };
+		804D27492B2C8AD800CAE145 /* KeychainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainViewController.swift; sourceTree = "<group>"; };
 		80E77B1C2B1DA57700BB9ACE /* SecurityIniOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecurityIniOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E77B1F2B1DA57700BB9ACE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80E77B212B1DA57700BB9ACE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +75,7 @@
 		80E77B1E2B1DA57700BB9ACE /* SecurityIniOSApp */ = {
 			isa = PBXGroup;
 			children = (
+				804D27462B2C12A700CAE145 /* SecurityIniOSApp.entitlements */,
 				80E77B332B1DAFCC00BB9ACE /* Src */,
 				80E77B1F2B1DA57700BB9ACE /* AppDelegate.swift */,
 				80E77B212B1DA57700BB9ACE /* SceneDelegate.swift */,
@@ -101,6 +113,7 @@
 		80E77B352B1DAFCC00BB9ACE /* FaceID */ = {
 			isa = PBXGroup;
 			children = (
+				804D27422B2C0F1500CAE145 /* FaceIdViewController.swift */,
 			);
 			path = FaceID;
 			sourceTree = "<group>";
@@ -117,6 +130,7 @@
 		80E77B382B1DAFCC00BB9ACE /* TextFile */ = {
 			isa = PBXGroup;
 			children = (
+				804D27442B2C127C00CAE145 /* TextFileViewController.swift */,
 			);
 			path = TextFile;
 			sourceTree = "<group>";
@@ -124,6 +138,7 @@
 		80E77B392B1DAFCC00BB9ACE /* Keychain */ = {
 			isa = PBXGroup;
 			children = (
+				804D27492B2C8AD800CAE145 /* KeychainViewController.swift */,
 			);
 			path = Keychain;
 			sourceTree = "<group>";
@@ -131,6 +146,7 @@
 		80E77B3A2B1DAFCC00BB9ACE /* TouchID */ = {
 			isa = PBXGroup;
 			children = (
+				804D27402B2C0B0400CAE145 /* TouchIdViewController.swift */,
 			);
 			path = TouchID;
 			sourceTree = "<group>";
@@ -138,6 +154,7 @@
 		80E77B3B2B1DAFCC00BB9ACE /* DataFile */ = {
 			isa = PBXGroup;
 			children = (
+				804D27472B2C868800CAE145 /* DataFileViewController.swift */,
 			);
 			path = DataFile;
 			sourceTree = "<group>";
@@ -234,9 +251,14 @@
 				80E77B202B1DA57700BB9ACE /* AppDelegate.swift in Sources */,
 				80E77B222B1DA57700BB9ACE /* SceneDelegate.swift in Sources */,
 				804D273F2B2B35EA00CAE145 /* LoginByAlertViewController.swift in Sources */,
+				804D27482B2C868800CAE145 /* DataFileViewController.swift in Sources */,
 				80E77B3D2B1DAFCC00BB9ACE /* HomeViewController.swift in Sources */,
+				804D27452B2C127C00CAE145 /* TextFileViewController.swift in Sources */,
+				804D27412B2C0B0400CAE145 /* TouchIdViewController.swift in Sources */,
 				80E77B412B1DB5A100BB9ACE /* LoginViewController.swift in Sources */,
 				80E77B3F2B1DAFF600BB9ACE /* HomeTblCell.swift in Sources */,
+				804D274A2B2C8AD800CAE145 /* KeychainViewController.swift in Sources */,
+				804D27432B2C0F1500CAE145 /* FaceIdViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +408,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SecurityIniOSApp/SecurityIniOSApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -413,6 +436,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SecurityIniOSApp/SecurityIniOSApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

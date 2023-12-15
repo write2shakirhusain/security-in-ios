@@ -27,32 +27,31 @@ class Storyboards{
         return getMainStoryboards().instantiateViewController(withIdentifier: "LoginByAlertViewController") as! LoginByAlertViewController
 
     }
-    class func getFaceIDScreen()->LoginViewController{
+    class func getFaceIDScreen()->FaceIdViewController{
         
-        return getMainStoryboards().instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        return getMainStoryboards().instantiateViewController(withIdentifier: "FaceIdViewController") as! FaceIdViewController
 
     }
-    class func getTouchIDScreen()->LoginViewController{
+    class func getTouchIDScreen()->TouchIdViewController{
         
-        return getMainStoryboards().instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        return getMainStoryboards().instantiateViewController(withIdentifier: "TouchIdViewController") as! TouchIdViewController
 
     }
-    class func getTextFileScreen()->LoginViewController{
+    class func getTextFileScreen()->TextFileViewController{
         
-        return getMainStoryboards().instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        return getMainStoryboards().instantiateViewController(withIdentifier: "TextFileViewController") as! TextFileViewController
 
     }
 
-    class func getDataFileScreen()->LoginViewController{
+    class func getDataFileScreen()->DataFileViewController{
         
-        return getMainStoryboards().instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        return getMainStoryboards().instantiateViewController(withIdentifier: "DataFileViewController") as! DataFileViewController
 
     }
     
-    class func getKeychainScreen()->LoginViewController{
+    class func getKeychainScreen()->KeychainViewController{
         
-        return getMainStoryboards().instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-
+        return getMainStoryboards().instantiateViewController(withIdentifier: "KeychainViewController") as! KeychainViewController
     }
 }
 
