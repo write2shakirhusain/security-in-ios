@@ -45,16 +45,16 @@ class HomeViewController: UIViewController {
         let item6 = SDMSecurityItem(name: "6. Secure Data File", type: .DataFile)
         securityItems.append(item6)
 
-        let item7 = SDMSecurityItem(name: "7. Save Data In Keychain", type: .KeyChain)
+        let item7 = SDMSecurityItem(name: "7. Add Data In Keychain", type: .KeyChainAdd)
         securityItems.append(item7)
 
-        let item8 = SDMSecurityItem(name: "8. Retrieve Data From Keychain", type: .KeyChain)
+        let item8 = SDMSecurityItem(name: "8. Retrieve Data From Keychain", type: .KeyChainRetrieve)
         securityItems.append(item8)
 
-        let item9 = SDMSecurityItem(name: "9. Update Data In Keychain", type: .KeyChain)
+        let item9 = SDMSecurityItem(name: "9. Update Data In Keychain", type: .KeyChainUpdate)
         securityItems.append(item9)
         
-        let item10 = SDMSecurityItem(name: "10. Delete Data From Keychain", type: .KeyChain)
+        let item10 = SDMSecurityItem(name: "10. Delete Data From Keychain", type: .KeyChainDelete)
         securityItems.append(item10)
 
 
@@ -128,8 +128,24 @@ extension HomeViewController : UITableViewDelegate{
                 let nextViewCon = Storyboards.getDataFileScreen()
                 gotoSelectedScreen(selectedScreen: nextViewCon)
 
-            case .KeyChain:
+            case .KeyChainAdd:
                 let nextViewCon = Storyboards.getKeychainScreen()
+                nextViewCon.operationType = .Add
+                gotoSelectedScreen(selectedScreen: nextViewCon)
+
+            case .KeyChainRetrieve:
+                let nextViewCon = Storyboards.getKeychainScreen()
+                nextViewCon.operationType = .Retrieve
+                gotoSelectedScreen(selectedScreen: nextViewCon)
+
+            case .KeyChainUpdate:
+                let nextViewCon = Storyboards.getKeychainScreen()
+                nextViewCon.operationType = .Update
+                gotoSelectedScreen(selectedScreen: nextViewCon)
+
+            case .KeyChainDelete:
+                let nextViewCon = Storyboards.getKeychainScreen()
+                nextViewCon.operationType = .Delete
                 gotoSelectedScreen(selectedScreen: nextViewCon)
 
         }
@@ -153,7 +169,7 @@ struct SDMSecurityItem {
 }
 
 enum SecurityType {
-
+    
     
     case PasswordInTextField
     case PasswordInAlert
@@ -161,6 +177,17 @@ enum SecurityType {
     case FaceId
     case TextFile
     case DataFile
-    case KeyChain
+    case KeyChainAdd
+    case KeyChainRetrieve
+    case KeyChainUpdate
+    case KeyChainDelete
+}
+
+enum CurdOperation {
+    
+    case Add
+    case Retrieve
+    case Update
+    case Delete
 }
 

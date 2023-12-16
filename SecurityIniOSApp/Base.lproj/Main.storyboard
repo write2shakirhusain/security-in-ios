@@ -445,6 +445,12 @@
                             <constraint firstItem="0Y9-wU-FBa" firstAttribute="centerY" secondItem="dQx-zW-toE" secondAttribute="centerY" id="eWb-yV-tho"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnDeleteData" destination="ZVW-LT-fDV" id="6OH-vT-UjI"/>
+                        <outlet property="btnRetrieveData" destination="FnE-gJ-2O8" id="g0d-dP-85l"/>
+                        <outlet property="btnSaveData" destination="rIu-6t-2Yz" id="3Ny-8X-G1G"/>
+                        <outlet property="btnUpdateData" destination="Q9y-Yy-6bB" id="lmw-QV-eNd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="72S-Ub-WDp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

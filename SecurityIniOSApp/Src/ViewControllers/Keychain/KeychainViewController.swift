@@ -9,7 +9,13 @@ import UIKit
 
 class KeychainViewController: UIViewController {
 
+    @IBOutlet weak var btnSaveData: UIButton!
+    @IBOutlet weak var btnRetrieveData: UIButton!
+    @IBOutlet weak var btnUpdateData: UIButton!
+    @IBOutlet weak var btnDeleteData: UIButton!
+    
     let server = "www.demo.com"
+    var operationType:CurdOperation?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,9 +25,28 @@ class KeychainViewController: UIViewController {
     }
     
     func uiConfigure() {
+        
         title = "Keychain Store Screen"
-    }
+        
+        switch operationType {
 
+        case .Add:
+            btnSaveData.backgroundColor = .systemGreen
+            
+        case .Retrieve:
+            btnRetrieveData.backgroundColor = .systemGreen
+            
+        case .Update:
+            btnUpdateData.backgroundColor = .systemGreen
+            
+        case .Delete:
+            btnDeleteData.backgroundColor = .systemGreen
+                   
+        case .none:
+            print("Not Selected!")
+        }
+    }
+    
     @IBAction func clickedOnSaveData(_ sender: Any) {
         
         let credential  = SDMUserCredential(userId: "Shakir", password: "Abcd@123")
