@@ -86,10 +86,8 @@ extension HomeViewController : UITableViewDataSource{
             
             return UITableViewCell()
         }
-        
         let item = securityItems[indexPath.row]
-        cell.lblName.text = item.name
-        
+        cell.updateUI(item: item)
         return cell
     }
 }

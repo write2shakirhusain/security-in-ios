@@ -11,6 +11,7 @@ class HomeTblCell: UITableViewCell {
 
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var lblName: UILabel!
+    var defaultColor:UIColor?
     
     
     override func awakeFromNib() {
@@ -18,12 +19,53 @@ class HomeTblCell: UITableViewCell {
         
         // Initialization code
         cardView.layer.cornerRadius = 5.0
+        defaultColor = cardView.backgroundColor
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func updateUI(item:SDMSecurityItem)  {
+        
+        lblName.text = item.name
+        switch item.type {
+        
+        
+        case .PasswordInTextField:
+            cardView.backgroundColor = defaultColor
+           
+        case .PasswordInAlert:
+            cardView.backgroundColor = defaultColor
+
+        case .TouchId:
+            cardView.backgroundColor = defaultColor
+
+        case .FaceId:
+            cardView.backgroundColor = defaultColor
+
+        case .TextFile:
+            cardView.backgroundColor = defaultColor
+
+        case .DataFile:
+            cardView.backgroundColor = defaultColor
+
+        case .KeyChainAdd:
+            cardView.backgroundColor = defaultColor
+
+        case .KeyChainRetrieve:
+            cardView.backgroundColor = defaultColor
+
+        case .KeyChainUpdate:
+            cardView.backgroundColor = defaultColor
+
+        case .KeyChainDelete:
+            cardView.backgroundColor = defaultColor
+
+        }
     }
     
 }
