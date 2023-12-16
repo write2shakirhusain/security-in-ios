@@ -32,6 +32,7 @@ class HomeTblCell: UITableViewCell {
     func updateUI(item:SDMSecurityItem)  {
         
         lblName.text = item.name
+        
         switch item.type {
         
         
