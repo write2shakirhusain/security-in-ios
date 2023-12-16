@@ -27,26 +27,35 @@ class HomeViewController: UIViewController {
     
     func configureData() {
         
-        let item1 = SDMSecurityItem(name: "Secure Password In Text Field", type: .PasswordInTextField)
+        let item1 = SDMSecurityItem(name: "1. Secure Password In Text Field", type: .PasswordInTextField)
         securityItems.append(item1)
        
-        let item2 = SDMSecurityItem(name: "Secure Password In Alert", type: .PasswordInAlert)
+        let item2 = SDMSecurityItem(name: "2. Secure Password In Alert", type: .PasswordInAlert)
         securityItems.append(item2)
 
-        let item3 = SDMSecurityItem(name: "Secure App Using Touch ID", type: .TouchId)
+        let item3 = SDMSecurityItem(name: "3. Secure App Using Touch ID", type: .TouchId)
         securityItems.append(item3)
        
-        let item4 = SDMSecurityItem(name: "Secure App Using Face ID", type: .FaceId)
+        let item4 = SDMSecurityItem(name: "4. Secure App Using Face ID", type: .FaceId)
         securityItems.append(item4)
 
-        let item5 = SDMSecurityItem(name: "Secure Text File", type: .TextFile)
+        let item5 = SDMSecurityItem(name: "5. Secure Text File", type: .TextFile)
         securityItems.append(item5)
         
-        let item6 = SDMSecurityItem(name: "Secure Data File", type: .DataFile)
+        let item6 = SDMSecurityItem(name: "6. Secure Data File", type: .DataFile)
         securityItems.append(item6)
 
-        let item7 = SDMSecurityItem(name: "Secure Data In Keychain", type: .KeyChain)
+        let item7 = SDMSecurityItem(name: "7. Save Data In Keychain", type: .KeyChain)
         securityItems.append(item7)
+
+        let item8 = SDMSecurityItem(name: "8. Retrieve Data From Keychain", type: .KeyChain)
+        securityItems.append(item8)
+
+        let item9 = SDMSecurityItem(name: "9. Update Data In Keychain", type: .KeyChain)
+        securityItems.append(item9)
+        
+        let item10 = SDMSecurityItem(name: "10. Delete Data From Keychain", type: .KeyChain)
+        securityItems.append(item10)
 
 
         
@@ -55,7 +64,7 @@ class HomeViewController: UIViewController {
     func configureUI()  {
         tblView.delegate = self
         tblView.dataSource = self
-            title = "Home Screen"
+            title = "Security In iOS App"
     }
     
 
