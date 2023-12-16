@@ -18,7 +18,7 @@ class HomeTblCell: UITableViewCell {
         
         // Initialization code
         cardView.layer.cornerRadius = 5.0
-        cardView.backgroundColor = .lightGray
+//        cardView.backgroundColor = .white
 
     }
 

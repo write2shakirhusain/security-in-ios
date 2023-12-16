@@ -8,7 +8,7 @@
 import UIKit
 import Foundation
 
-class Storyboards{
+final class Storyboards{
     
     static let mainStoryboardName = "Main"
     
