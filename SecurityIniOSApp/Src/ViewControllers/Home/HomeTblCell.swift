@@ -18,8 +18,6 @@ class HomeTblCell: UITableViewCell {
         
         // Initialization code
         cardView.layer.cornerRadius = 5.0
-//        cardView.backgroundColor = .white
-
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -24,7 +24,7 @@ class KeychainViewController: UIViewController {
 
     @IBAction func clickedOnSaveData(_ sender: Any) {
         
-        let credential  = UserCredential(userId: "Shakir", password: "Abcd@123")
+        let credential  = SDMUserCredential(userId: "Shakir", password: "Abcd@123")
         
         do{
             try saveCredentialInKeychain(credential: credential)
@@ -34,7 +34,7 @@ class KeychainViewController: UIViewController {
         }
     }
    
-    func saveCredentialInKeychain(credential:UserCredential) throws {
+    func saveCredentialInKeychain(credential:SDMUserCredential) throws {
         
         let  account = credential.userId
         let passwordData = credential.password.data(using: .utf8)
@@ -103,7 +103,7 @@ class KeychainViewController: UIViewController {
 
     @IBAction func clickedOnUpdateData(_ sender: Any) {
        
-        let credential  = UserCredential(userId: "Shakir", password: "Xyz@1234")
+        let credential  = SDMUserCredential(userId: "Shakir", password: "Xyz@1234")
         
         do{
             try updateCredentialInKeychain(credential: credential)
@@ -113,7 +113,7 @@ class KeychainViewController: UIViewController {
         }
     }
     
-    func updateCredentialInKeychain(credential:UserCredential) throws{
+    func updateCredentialInKeychain(credential:SDMUserCredential) throws{
         
         //create Search query Dictionanry
         var searchQuery:[String:Any] = [:]
@@ -171,7 +171,7 @@ class KeychainViewController: UIViewController {
 }
 
 //Data Model
-struct UserCredential {
+struct SDMUserCredential {
     var userId:String
     var password:String
 }
