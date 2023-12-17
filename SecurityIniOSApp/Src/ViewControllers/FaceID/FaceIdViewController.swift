@@ -16,12 +16,13 @@ class FaceIdViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        configureUI()
     }
-    func uiConfigure() {
-        title = "Touch Id Screen"
+    func configureUI() {
+        title = "Face Id Screen"
     }
     
-    @IBAction func clickedOnTochId(_ sender: Any) {
+    @IBAction func clickedOnFaceId(_ sender: Any) {
         authenticateTFaceId()
     }
     

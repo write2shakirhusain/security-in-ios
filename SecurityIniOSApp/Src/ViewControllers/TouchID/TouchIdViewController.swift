@@ -16,9 +16,10 @@ class TouchIdViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        configureUI()
     }
     
-    func uiConfigure() {
+    func configureUI() {
         title = "Touch Id Screen"
     }
     

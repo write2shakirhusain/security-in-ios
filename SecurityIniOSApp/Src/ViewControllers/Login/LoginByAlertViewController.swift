@@ -15,10 +15,10 @@ class LoginByAlertViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        uiConfigure()
+        configureUI()
     }
     
-    func uiConfigure() {
+    func configureUI() {
         title = "Login using by Alert"
         setupLoginAlert()
     }

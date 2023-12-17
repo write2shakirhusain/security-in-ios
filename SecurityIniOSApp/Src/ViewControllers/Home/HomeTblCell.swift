@@ -37,10 +37,10 @@ class HomeTblCell: UITableViewCell {
         
         
         case .PasswordInTextField:
-            cardView.backgroundColor = defaultColor
+            cardView.backgroundColor = .lightGray
            
         case .PasswordInAlert:
-            cardView.backgroundColor = defaultColor
+            cardView.backgroundColor = .systemGreen
 
         case .TouchId:
             cardView.backgroundColor = defaultColor

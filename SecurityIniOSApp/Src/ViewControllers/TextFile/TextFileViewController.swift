@@ -15,10 +15,10 @@ class TextFileViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        uiConfigure()
+        configureUI()
     }
     
-    func uiConfigure() {
+    func configureUI() {
         title = "Protect Text File On disk"
     }
 
@@ -27,8 +27,10 @@ class TextFileViewController: UIViewController {
     }
     
     func protectTextFile() {
+        
         //Create and save file
         let someText = "Hello Guys!"
+        
         let urlDocumentDir = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
         
         let urlMyFile = urlDocumentDir.appending(component: textFileName).appendingPathExtension("txt")
@@ -40,9 +42,19 @@ class TextFileViewController: UIViewController {
             fileAttributes[FileAttributeKey.protectionKey] = FileProtectionType.complete
             
 //            FileProtectionType.complete
+            
+           //* The file is stored in an encrypted format on disk and cannot be read from or written to while the device is locked or booting. */
+            
 //            FileProtectionType.completeUnlessOpen
-//            FileProtectionType.completeWhenUserInactive
+            
+            //* The file is stored in an encrypted format on disk after it is closed.*/
+            
+            
 //            FileProtectionType.completeUntilFirstUserAuthentication
+            
+            //*The file is stored in an encrypted format on disk and cannot be accessed until after the device has booted.*/
+            
+            
 
             try FileManager.default.setAttributes(fileAttributes, ofItemAtPath: urlMyFile.absoluteString)
             print("File saved with protection successfully!")

@@ -21,10 +21,10 @@ class KeychainViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        uiConfigure()
+        configureUI()
     }
     
-    func uiConfigure() {
+    func configureUI() {
         
         title = "Keychain Store Screen"
         
@@ -128,7 +128,7 @@ class KeychainViewController: UIViewController {
 
     @IBAction func clickedOnUpdateData(_ sender: Any) {
        
-        let credential  = SDMUserCredential(userId: "Shakir", password: "Xyz@1234")
+        let credential  = SDMUserCredential(userId: "Shakir", password: "Qwerty@1234")
         
         do{
             try updateCredentialInKeychain(credential: credential)
@@ -153,6 +153,7 @@ class KeychainViewController: UIViewController {
         var newDetailQuery:[String:Any] = [:]
         newDetailQuery[kSecAttrAccount as String] = newuserId
         newDetailQuery[kSecValueData as String] = newpasswordData
+        
         let status = SecItemUpdate(searchQuery as CFDictionary, newDetailQuery as CFDictionary)
         
         guard status != errSecItemNotFound else {
@@ -167,7 +168,6 @@ class KeychainViewController: UIViewController {
     }
 
     @IBAction func clickedOnDeleteData(_ sender: Any) {
-        
         
         do{
             try deleteCredentialFromKeychain(server: server)
@@ -186,25 +186,14 @@ class KeychainViewController: UIViewController {
         
         //delete Item and check status
         let status = SecItemDelete( searchQuery as CFDictionary)
-        guard status == errSecItemNotFound || status == errSecSuccess else {
+        
+        guard status == errSecSuccess else {
             print("Status : \(status)");throw KeychainError.unhabledError
         }
+
         print("Credential has been deleted successfully!")
 
     }
 
 }
 
-//Data Model
-struct SDMUserCredential {
-    var userId:String
-    var password:String
-}
-
-//Enum for expected errors
-enum KeychainError :Error {
-    
-    case noPassword
-    case unexpectedPasswordData
-    case unhabledError
-}

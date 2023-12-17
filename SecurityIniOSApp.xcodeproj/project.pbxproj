@@ -13,6 +13,7 @@
 		804D27452B2C127C00CAE145 /* TextFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D27442B2C127C00CAE145 /* TextFileViewController.swift */; };
 		804D27482B2C868800CAE145 /* DataFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D27472B2C868800CAE145 /* DataFileViewController.swift */; };
 		804D274A2B2C8AD800CAE145 /* KeychainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D27492B2C8AD800CAE145 /* KeychainViewController.swift */; };
+		80A28E802B2F0F9200D04291 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A28E7F2B2F0F9200D04291 /* DataModel.swift */; };
 		80E77B202B1DA57700BB9ACE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E77B1F2B1DA57700BB9ACE /* AppDelegate.swift */; };
 		80E77B222B1DA57700BB9ACE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E77B212B1DA57700BB9ACE /* SceneDelegate.swift */; };
 		80E77B272B1DA57700BB9ACE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80E77B252B1DA57700BB9ACE /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		804D27462B2C12A700CAE145 /* SecurityIniOSApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SecurityIniOSApp.entitlements; sourceTree = "<group>"; };
 		804D27472B2C868800CAE145 /* DataFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFileViewController.swift; sourceTree = "<group>"; };
 		804D27492B2C8AD800CAE145 /* KeychainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainViewController.swift; sourceTree = "<group>"; };
+		80A28E7F2B2F0F9200D04291 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		80E77B1C2B1DA57700BB9ACE /* SecurityIniOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecurityIniOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E77B1F2B1DA57700BB9ACE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80E77B212B1DA57700BB9ACE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				804D27492B2C8AD800CAE145 /* KeychainViewController.swift */,
+				80A28E7F2B2F0F9200D04291 /* DataModel.swift */,
 			);
 			path = Keychain;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				804D273F2B2B35EA00CAE145 /* LoginByAlertViewController.swift in Sources */,
 				804D27482B2C868800CAE145 /* DataFileViewController.swift in Sources */,
 				80E77B3D2B1DAFCC00BB9ACE /* HomeViewController.swift in Sources */,
+				80A28E802B2F0F9200D04291 /* DataModel.swift in Sources */,
 				804D27452B2C127C00CAE145 /* TextFileViewController.swift in Sources */,
 				804D27412B2C0B0400CAE145 /* TouchIdViewController.swift in Sources */,
 				80E77B412B1DB5A100BB9ACE /* LoginViewController.swift in Sources */,

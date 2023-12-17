@@ -181,11 +181,4 @@ enum SecurityType {
     case KeyChainDelete
 }
 
-enum CurdOperation {
-    
-    case Add
-    case Retrieve
-    case Update
-    case Delete
-}
 

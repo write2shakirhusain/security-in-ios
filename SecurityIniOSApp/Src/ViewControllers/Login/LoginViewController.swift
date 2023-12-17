@@ -11,18 +11,16 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var txtFieldPassword: UITextField!
     @IBOutlet weak var txtFieldUserId: UITextField!
-    
-    var loginAlertViewCon:UIAlertController?
-    
+        
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        uiConfigure()
+        configureUI()
     }
     
-    func uiConfigure() {
+    func configureUI() {
         title = "Login using by Text Field"
         txtFieldUserId.placeholder = "Enter User Id"
         txtFieldUserId.isSecureTextEntry = false

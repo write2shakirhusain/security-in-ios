@@ -43,7 +43,6 @@ class DataFileViewController: UIViewController {
             
 //            NSData.WritingOptions.completeFileProtection
 //            NSData.WritingOptions.completeFileProtectionUnlessOpen
-//            NSData.WritingOptions.completeFileProtectionWhenUserInactive
 //            NSData.WritingOptions.completeFileProtectionUntilFirstUserAuthentication
 
 
