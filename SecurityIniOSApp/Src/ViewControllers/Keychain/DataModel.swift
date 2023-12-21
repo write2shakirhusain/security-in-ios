@@ -21,7 +21,7 @@ enum KeychainError :Error {
     case unhabledError
 }
 //Enum for Operation of Keychain
-enum CurdOperation {
+enum CrudOperation {
     
     case Add
     case Retrieve

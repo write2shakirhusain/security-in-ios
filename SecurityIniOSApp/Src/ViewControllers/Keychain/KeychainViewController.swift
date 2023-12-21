@@ -15,7 +15,7 @@ class KeychainViewController: UIViewController {
     @IBOutlet weak var btnDeleteData: UIButton!
     
     let server = "www.demo.com"
-    var operationType:CurdOperation?
+    var operationType:CrudOperation?
     
     override func viewDidLoad() {
         super.viewDidLoad()
